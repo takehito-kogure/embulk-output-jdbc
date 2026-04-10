@@ -6,12 +6,12 @@ plugins {
     id "maven-publish"
     id "signing"
     id 'checkstyle'
-    id "org.embulk.embulk-plugins" version "0.6.2" apply false
+    id "org.embulk.embulk-plugins" version "0.7.0" apply false
 }
 
 allprojects {
     group = "org.embulk"
-    version = "0.10.6"
+    version = "0.10.7"
     description = "Inserts or updates records to a table."
 }
 
@@ -58,10 +58,10 @@ subprojects {
 
         // They are once excluded from transitive dependencies of other dependencies,
         // and added explicitly with versions exactly the same with embulk-core:0.10.31.
-        implementation "com.fasterxml.jackson.core:jackson-annotations:2.6.7"
-        implementation "com.fasterxml.jackson.core:jackson-core:2.6.7"
-        implementation "com.fasterxml.jackson.core:jackson-databind:2.6.7.5"
-        implementation "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.6.7"
+        implementation "com.fasterxml.jackson.core:jackson-annotations:2.21"
+        implementation "com.fasterxml.jackson.core:jackson-core:2.21.2"
+        implementation "com.fasterxml.jackson.core:jackson-databind:2.21.2"
+        implementation "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.21.2"
         implementation "javax.validation:validation-api:1.1.0.Final"
 
         implementation "org.embulk:embulk-util-json:0.3.0"
@@ -101,7 +101,7 @@ subprojects {
     }
 
     gem {
-        authors = [ "Sadayuki Furuhashi" ]
+        authors = [ "Sadayuki Furuhashi", "Kogure" ]
         email = [ "frsyuki@gmail.com" ]
         summary = "JDBC output plugin for Embulk"
         homepage = "https://github.com/embulk/embulk-output-jdbc"

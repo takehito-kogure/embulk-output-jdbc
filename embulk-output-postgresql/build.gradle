@@ -1,11 +1,11 @@
 dependencies {
     implementation(project(path: ":embulk-output-jdbc", configuration: "runtimeElements"))
 
-    compileOnly "org.postgresql:postgresql:9.4-1205-jdbc41"
-    defaultJdbcDriver 'org.postgresql:postgresql:9.4-1205-jdbc41'
+    compileOnly "org.postgresql:postgresql:42.7.10"
+    defaultJdbcDriver 'org.postgresql:postgresql:42.7.10'
 
     testImplementation project(':embulk-output-jdbc').sourceSets.test.output
-    testImplementation "org.postgresql:postgresql:9.4-1205-jdbc41"
+    testImplementation "org.postgresql:postgresql:42.7.10"
 
     testImplementation "org.embulk:embulk-formatter-csv:0.10.42"
     testImplementation "org.embulk:embulk-input-file:0.10.42"
