@@ -1,12 +1,14 @@
 # This is a Gradle generated file for dependency locking.
 # Manual edits can break the build and are not advised.
 # This file is expected to be part of source control.
-com.fasterxml.jackson.core:jackson-annotations:2.6.7=compileClasspath,runtimeClasspath
-com.fasterxml.jackson.core:jackson-core:2.6.7=compileClasspath,runtimeClasspath
-com.fasterxml.jackson.core:jackson-databind:2.6.7.5=compileClasspath,runtimeClasspath
-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.6.7=compileClasspath,runtimeClasspath
+com.fasterxml.jackson.core:jackson-annotations:2.21=compileClasspath,runtimeClasspath
+com.fasterxml.jackson.core:jackson-core:2.21.2=compileClasspath,runtimeClasspath
+com.fasterxml.jackson.core:jackson-databind:2.21.2=compileClasspath,runtimeClasspath
+com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.21.2=compileClasspath,runtimeClasspath
+com.fasterxml.jackson:jackson-bom:2.21.2=compileClasspath,runtimeClasspath
+com.google.protobuf:protobuf-java:4.31.1=compileClasspath
+com.mysql:mysql-connector-j:9.6.0=compileClasspath
 javax.validation:validation-api:1.1.0.Final=compileClasspath,runtimeClasspath
-mysql:mysql-connector-java:5.1.44=compileClasspath
 org.embulk:embulk-spi:0.10.49=compileClasspath
 org.embulk:embulk-util-config:0.3.4=compileClasspath,runtimeClasspath
 org.embulk:embulk-util-json:0.3.0=compileClasspath,runtimeClasspath

@@ -1,10 +1,10 @@
 dependencies {
     implementation(project(path: ":embulk-output-jdbc", configuration: "runtimeElements"))
 
-    compileOnly "mysql:mysql-connector-java:5.1.44"
-    defaultJdbcDriver 'mysql:mysql-connector-java:5.1.44'
+    compileOnly "com.mysql:mysql-connector-j:9.6.0"
+    defaultJdbcDriver 'com.mysql:mysql-connector-j:9.6.0'
 
-    testImplementation "mysql:mysql-connector-java:5.1.44"
+    testImplementation "com.mysql:mysql-connector-j:9.6.0"
 
     testImplementation "org.embulk:embulk-formatter-csv:0.10.42"
     testImplementation "org.embulk:embulk-input-file:0.10.42"
